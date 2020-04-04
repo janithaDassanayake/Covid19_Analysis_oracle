@@ -1,0 +1,29 @@
+/ as sysdba
+
+alter session set "_ORACLE_SCRIPT"=true;
+
+create user janith_dsds identified by dsda;
+
+grant create session to janith_dsds;
+
+connect janith_dsds/dsda
+
+conn / as sysdba
+
+grant create table to janith_dsds;
+
+grant create type to janith_dsds;
+
+GRANT ALL PRIVILEGES TO janith_dsds;
+
+conn janith_dsds/dsda 
+
+conn / as sysdba
+
+CREATE OR REPLACE DIRECTORY MY_DIRECTORY AS 'c:\dsda_it17167710_mid\';
+
+GRANT READ, WRITE ON DIRECTORY MY_DIRECTORY TO janith_dsds;
+
+GRANT EXECUTE ON SYS.utl_file TO janith_dsds;
+
+conn janith_dsds/dsda
