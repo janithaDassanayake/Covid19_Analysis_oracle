@@ -2,7 +2,6 @@
 
 Coronavirus disease (COVID-19) is an infectious disease caused by a new virus.
 -------------------------------------------------------------------------------
-
 This may contain
 
 1.There are 7 reports planning for decision makers.
